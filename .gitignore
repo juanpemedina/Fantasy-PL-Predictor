@@ -1,6 +1,7 @@
 .venv/
 __pycache__/
 data/raw/
+data/processed/
 *.pkl
 .env
 node_modules/
