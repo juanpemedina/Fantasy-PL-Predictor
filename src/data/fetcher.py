@@ -94,7 +94,7 @@ if __name__ == "__main__":
         fetch_fixtures()
         # Prueba primero descargando solo 10 jugadores para confirmar que funciona
         print(">>> Descargando muestra de historiales...")
-        fetch_player_histories(players_df, limit=10) 
+        fetch_player_histories(players_df) 
         print(">>> ¡Proceso completado con éxito!")
     except Exception as e:
         print(f"[!] Ocurrió un error durante la ejecución: {e}")
