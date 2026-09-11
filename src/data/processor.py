@@ -17,7 +17,7 @@ def process_raw_data():
     
     df_players["team_name"] = df_players["team"].map(team_map)
     df_players["position"] = df_players["element_type"].map(pos_map)
-    # df_players["now_cost"] = df_players["now_cost"] / 10.0  # El precio viene multiplicado por 10
+    df_players["now_cost"] = df_players["now_cost"] / 10.0  # El precio viene multiplicado por 10
     
     df_players.to_csv(f"{PROCESSED_PATH}/players_clean.csv", index=False)
     print(f"[✓] Jugadores procesados: {len(df_players)} guardados en {PROCESSED_PATH}/players_clean.csv")
